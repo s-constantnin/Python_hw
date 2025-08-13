@@ -1,9 +1,11 @@
-month_to_season = int(input("Ведите номер месяца: "))
-if 2>=month_to_season or 12<=month_to_season:
-    print("Сейчас зима")
-if 3<=month_to_season<=5:
-    print("Сейчас Весна")
-if 6<=month_to_season<=8:
-    print("Сейчас Лето")
-if 9<=month_to_season<=11:
-    print("Сейчас осень")
+def month_to_season(month):
+    if month in (12, 1, 2):
+        return "Зима"
+    elif 3 <= month <= 5:
+        return "Весна"
+    elif 6 <= month <= 8:
+        return "Лето"
+    elif 9 <= month <= 11:
+        return "Осень"
+    else:
+        return "Ошибка"

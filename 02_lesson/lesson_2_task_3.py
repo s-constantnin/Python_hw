@@ -1,3 +1,8 @@
-square = int(input("Ведите длину стороны квадрата: "))
-result = square * square
-print("Площадь квадрата:", result)
+import math
+
+
+def square(side):
+    return math.ceil(side ** 2)
+
+
+print("Площадь квадрата:", square(3.2))

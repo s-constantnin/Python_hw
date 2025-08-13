@@ -1,6 +1,7 @@
-is_year_leap = int(input("Ведите год: "))
-text_1 = "true"
-text_2 = "false"
-if is_year_leap % 4 == 0:
-    print("год:", is_year_leap,':', text_1)
-else: print("год", is_year_leap,':', text_2)
+def is_year_leap(year):
+    return year % 4 == 0
+
+
+year = 2024
+result = is_year_leap(year)
+print(f"год {year}: {result}")
